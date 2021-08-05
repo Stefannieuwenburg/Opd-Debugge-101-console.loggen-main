@@ -38,19 +38,76 @@ console.log(ItemName)
 
 */
 const companies = [
-    {name:"Company One",category:"Finance",start:1981, end:2003},
-    {name:"Company Two",category:"Reatail",start:1992, end:2008},
-    {name:"Company Three",category:"Auto",start:1999, end:2007},
-    {name:"Company Four",category:"Tech",start:1985, end:2011},
-    {name:"Company Five",category:"Finance",start:1986, end:2014},
-    {name:"Company Six",category:"Auto",start:1989, end:2016},
-    {name:"Company Seven",category:"Tech",start:1977, end:2010},
-    {name:"Company Eicht",category:"Reatail",start:1960, end:2013},
+    {name: "Company One", category: "Finance", start: 1981, end: 2003},
+    {name: "Company Two", category: "Retail", start: 1992, end: 2008},
+    {name: "Company Three", category: "Auto", start: 1999, end: 2007},
+    {name: "Company Four", category: "Retail", start: 1989, end: 2010},
+    {name: "Company Five", category: "Technology", start: 2009, end: 2014},
+    {name: "Company Six", category: "Finance", start: 1987, end: 2010},
+    {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
+    {name: "Company Eight", category: "Technology", start: 2011, end: 2016},
+    {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
 ];
 
 const ages = [33,12,20,16,5,54,21,44,61,13,15,45,25,64,32];
-//forEach
-//filter 
-//map
-//sort
-//reduce
+
+
+//opd A forEach
+//Opd B filter 
+//Opd C map
+//Opd D sort
+//OPD E reduce
+
+//Opd A
+//companies.forEach((Company) =>{
+//    console.log(Company.start);
+//});
+
+//Opd B filter op drink leeftijd:
+
+//const canDrink = ages.filter(age => age >= 18);
+//console.log(canDrink);
+
+
+//const retailCompanies = companies.filter(function(company) {
+//if (company.category ==="Retail"){
+    //return true;
+//}
+//});
+
+//const retailCompanies = companies.filter(company => company.category ==="Retail");
+//console.log(retailCompanies);
+
+//const eightiesCompanies = companies.filter(company =>(company.start >=
+   // 1980 && company.start < 1990));
+
+//console.log(eightiesCompanies);
+//const lastedTenYears = companies.filter(company =>(company.end - company.start >= 10));
+//console.log(lastedTenYears);
+
+//Opd C map
+//creat Array of company names 
+
+//const companyNames = companies.map(function(company) {
+ //   return company.name;
+//});
+//const companyNames = companies.map(company => (company.name))
+//console.log(companyNames);
+
+//Opd D sort by de begin datum !!!!
+
+//const sortedCompanies = companies.sort(function(c1,c2){
+//    if (c1.start > c2.start) {
+ //       return 1;
+ //   }else {
+ //    return -1;
+ //           }
+ //       }
+ //   );
+
+// Arrow way ? is if/else 
+//const sortedCompanies = companies.sort((a,b) => (a.start > b.start ? 1:-1));    
+//console.log(sortedCompanies);
+
+const sortAges = ages.sort();
+console.log(sortAges);
