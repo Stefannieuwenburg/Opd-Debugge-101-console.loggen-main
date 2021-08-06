@@ -8,5 +8,14 @@ const array = [
 ];
 
 for (let person of array) {
-  //hier moeten console.logs komen
+ // console.log(array);
+ //console.log(person);
+ //console.log(name);
+ //console.log(person.profession);
+ //console.log(person.name);
+//console.log(person.age);
+
+
+
 }
+//console.log(array);
