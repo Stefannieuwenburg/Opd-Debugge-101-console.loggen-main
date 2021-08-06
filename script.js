@@ -109,5 +109,33 @@ const ages = [33,12,20,16,5,54,21,44,61,13,15,45,25,64,32];
 //const sortedCompanies = companies.sort((a,b) => (a.start > b.start ? 1:-1));    
 //console.log(sortedCompanies);
 
-const sortAges = ages.sort();
-console.log(sortAges);
+//const sortAges = ages.sort((a,b) => a-b);
+//console.log(sortAges);
+
+//OPD E reduce
+//const ageSum = ages.reduce((total, age)=> total + age, 0);
+//console.log(ageSum);
+
+//const combined = ages
+//.map(age => age * 2)
+//.filter(age => age >= 40)
+//.sort((a,b)=> a - b)
+//.reduce((a,b) => a+b,0);
+
+//console.log(combined);
+const animals = [
+    { name: 'Fluffykins', species: 'rabbit' },
+    { name: 'Caro',       species: 'dog' },
+    { name: 'Hamilton',   species: 'dog' },
+    { name: 'Harold',     species: 'fish' },
+    { name: 'Ursula',     species: 'cat' },
+    { name: 'Jimmy',      species: 'fish' },
+  ]
+
+//for loops van een array.
+
+  var names = []
+for (var i = 0; i < animals.length; i++) {
+  names.push(animals[i].name)
+}
+console.log(names);
